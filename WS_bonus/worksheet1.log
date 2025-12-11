@@ -1,0 +1,109 @@
+    1  sudo apt-get install xfce4
+    2  ping www.google.com
+    3  ifconfig
+    4  ping www.google.com
+    5  ifconfig
+    6  ping www.google.com
+    7  ping 8.8.8.8
+    8  ping www.syr.edu
+    9  ping www.google.com
+   10  sudo apt-get update
+   11  sudo gedit /etc/sudoers
+   12  sudo apt-get update
+   13  sudo apt-get install xfce4
+   14  ls
+   15  ping www.google.com
+   16  cd /
+   17  find . -name 'xfce-teal.jpg'
+   18  sudo find . -name 'xfce-teal.jpg'
+   19  cd /usr/share/backgrounds/
+   20  ls
+   21  cp Black_hole_by_Marek_Koteluk_with_logo.jpg  xfce/
+   22  ll
+   23  sudo cp Black_hole_by_Marek_Koteluk_with_logo.jpg  xfce/
+   24  ls
+   25  cd xfce/
+   26  ls
+   27  sudo rm Black_hole_by_Marek_Koteluk_with_logo.jpg 
+   28  ls
+   29  cd ..
+   30  sudo apt install scapy
+   31  sudo pip3 install scapy
+   32  python3
+   33  sudo python3
+   34  nano udp_flood.py
+   35  nano icmp_flood.py
+   36  nano tcp_syn.py
+   37  chmod +x udp_flood.py
+   38  chmod +x icmp_flood.py 
+   39  chmod +x tcp_syn.py 
+   40  ifconfig
+   41  sudo python3 udp_flood.py 10.0.2.15 80 500
+   42  sudo wireshar
+   43  sudo python3 udp_flood.py 10.0.2.15 80 500
+   44  su
+   45  sudo wireshark
+   46  git config --global user.email dylanle13579@gmail.com
+   47  git config --global user.name dylanle13579
+   48  pwd
+   49  cd ~
+   50  cd Desktop
+   51  mkdir cs149
+   52  cd cs149
+   53  git init
+   54  git remote add origin https://github.com/dylanle13579/cs149.git
+   55  mkdir WS1
+   56  cd WS1
+   57  cd
+   58  mkdir WS_bonus
+   59  cs WS_bonus
+   60  cd WS_bonus
+   61  git add .
+   62  cd cs149
+   63  ls
+   64  cd cs149
+   65  cd ~
+   66  cd ~/Desktop/cs149
+   67  mkdir WS_bonus
+   68  cd WS_bonus
+   69  git add .
+   70  wget -O out.pdf https://tinyurl.com/yy94jltt
+   71  ls -latr
+   72  history > cmds.log
+   73  git add cmds.log *.c
+   74  git add cmds.log
+   75  git commit -m "First commit" -a
+   76  git branch
+   77  git push -u origin main
+   78  git branch -M main
+   79  git push -u origin main
+   80  git branch
+   81  git push -u origin main
+   82  $ cd ~
+   83  cd ~
+   84  git clone git://g.csail.mit.edu/xv6-labs-2023
+   85  cd xv6-labs-2023
+   86  make qemu
+   87  ls
+   88  sudo apt-get update
+   89  sudo apt-get install gcc-riscv64-unknown-elf binutils-riscv64-unknown-elf qemu-system-misc
+   90  sudo apt-get update
+   91  sudo apt-get install git build-essential gdb-multiarch qemu-system-misc     gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
+   92  sudo apt-get update
+   93  sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip     libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo     gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake     libglib2.0-dev libslirp-dev
+   94  cd ~
+   95  git clone https://github.com/riscv-collab/riscv-gnu-toolchain
+   96  cd riscv-gnu-toolchain
+   97  ./configure --prefix=$HOME/riscv --with-arch=rv64gc --with-abi=lp64
+   98  make
+   99  ./configure --prefix=$HOME/riscv --with-arch=rv64gc --with-abi=lp64 make
+  100  echo 'export PATH=$HOME/riscv/bin:$PATH' >> ~/.bashrc
+  101  source ~/.bashrc
+  102  riscv64-unknown-elf-gcc --version
+  103  cd ~/xv6-labs-2023
+  104  nano user/sleep.c
+  105  nano Makefile
+  106  make qemu
+  107  sleep 10
+  108  ./grade-lab-util sleep
+  109  history > worksheet1.log
